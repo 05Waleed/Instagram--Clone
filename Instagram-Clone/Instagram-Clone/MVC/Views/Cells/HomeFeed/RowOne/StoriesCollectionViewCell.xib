@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StoriesCollectionViewCell" id="NxH-S2-alZ" customClass="StoriesCollectionViewCell" customModule="Instagram_Clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="94" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FMe-eL-HTX">
+                <rect key="frame" x="0.0" y="0.0" width="94" height="108"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urV-sS-1eJ">
+                        <rect key="frame" x="4" y="4" width="86" height="86"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="mHe-F6-9uL">
+                                <rect key="frame" x="6" y="7.3333333333333357" width="74" height="71.333333333333314"/>
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="mHe-F6-9uL" secondAttribute="trailing" constant="6" id="D37-gi-CTD"/>
+                            <constraint firstAttribute="bottom" secondItem="mHe-F6-9uL" secondAttribute="bottom" constant="6" id="kFX-jW-c9U"/>
+                            <constraint firstItem="mHe-F6-9uL" firstAttribute="leading" secondItem="urV-sS-1eJ" secondAttribute="leading" constant="6" id="mQZ-sD-qFl"/>
+                            <constraint firstAttribute="width" constant="86" id="opu-E2-deM"/>
+                            <constraint firstItem="mHe-F6-9uL" firstAttribute="top" secondItem="urV-sS-1eJ" secondAttribute="top" constant="6" id="uk4-wj-bHq"/>
+                            <constraint firstAttribute="height" constant="86" id="vtt-ZO-W8J"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8S-DP-fLc">
+                        <rect key="frame" x="0.0" y="93" width="94" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="LnK-jZ-gPV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="D8S-DP-fLc" secondAttribute="trailing" id="Ke5-Hx-8NT"/>
+                    <constraint firstItem="D8S-DP-fLc" firstAttribute="top" secondItem="urV-sS-1eJ" secondAttribute="bottom" constant="3" id="Mn8-KV-mpX"/>
+                    <constraint firstItem="D8S-DP-fLc" firstAttribute="leading" secondItem="FMe-eL-HTX" secondAttribute="leading" id="WnL-Fh-yRk"/>
+                    <constraint firstItem="urV-sS-1eJ" firstAttribute="leading" secondItem="FMe-eL-HTX" secondAttribute="leading" constant="4" id="jri-t4-Brn"/>
+                    <constraint firstAttribute="trailing" secondItem="urV-sS-1eJ" secondAttribute="trailing" constant="4" id="kVy-U3-GYf"/>
+                    <constraint firstAttribute="bottom" secondItem="D8S-DP-fLc" secondAttribute="bottom" id="pqf-F9-qEF"/>
+                    <constraint firstItem="urV-sS-1eJ" firstAttribute="top" secondItem="FMe-eL-HTX" secondAttribute="top" constant="4" id="utc-c7-l1a"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="153" height="133"/>
+            <connections>
+                <outlet property="isStorySeenView" destination="urV-sS-1eJ" id="G1y-Pc-a3D"/>
+                <outlet property="storyImage" destination="mHe-F6-9uL" id="7TS-0r-uyC"/>
+                <outlet property="userNameLbl" destination="D8S-DP-fLc" id="Gul-rm-uCq"/>
+            </connections>
+            <point key="canvasLocation" x="216.79389312977099" y="14.788732394366198"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="person" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

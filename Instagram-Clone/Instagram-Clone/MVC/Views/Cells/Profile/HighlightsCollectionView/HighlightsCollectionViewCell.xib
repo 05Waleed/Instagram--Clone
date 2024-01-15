@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HighlightsCollectionViewCell" id="34H-pr-Ifx" customClass="HighlightsCollectionViewCell" customModule="Instagram_Clone" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="102"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6Du-YZ-Pdj">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="102"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0ju-Fb-pFs">
+                        <rect key="frame" x="5" y="4" width="80" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6yg-0D-x5d">
+                                <rect key="frame" x="6" y="6" width="68" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="D7O-rm-Z1r"/>
+                                    <constraint firstAttribute="height" constant="68" id="o7W-7D-aSO"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="6yg-0D-x5d" secondAttribute="trailing" constant="6" id="EQm-Cp-rru"/>
+                            <constraint firstItem="6yg-0D-x5d" firstAttribute="top" secondItem="0ju-Fb-pFs" secondAttribute="top" constant="6" id="IdE-XJ-ibV"/>
+                            <constraint firstAttribute="bottom" secondItem="6yg-0D-x5d" secondAttribute="bottom" constant="6" id="O7o-vj-Rpp"/>
+                            <constraint firstItem="6yg-0D-x5d" firstAttribute="leading" secondItem="0ju-Fb-pFs" secondAttribute="leading" constant="6" id="QJU-2o-Tj3"/>
+                            <constraint firstAttribute="width" constant="80" id="l4i-Wc-QOT"/>
+                            <constraint firstAttribute="height" constant="80" id="syW-w8-QCG"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xa9-U3-BxR">
+                        <rect key="frame" x="0.0" y="87" width="90" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="hCG-oD-EsC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Xa9-U3-BxR" secondAttribute="bottom" id="0Rc-Vx-NKK"/>
+                    <constraint firstItem="0ju-Fb-pFs" firstAttribute="top" secondItem="6Du-YZ-Pdj" secondAttribute="top" constant="4" id="LOO-Gx-8KX"/>
+                    <constraint firstItem="Xa9-U3-BxR" firstAttribute="top" secondItem="0ju-Fb-pFs" secondAttribute="bottom" constant="3" id="Oj9-Tc-Qer"/>
+                    <constraint firstAttribute="trailing" secondItem="Xa9-U3-BxR" secondAttribute="trailing" id="Rl7-Er-3BM"/>
+                    <constraint firstAttribute="trailing" secondItem="0ju-Fb-pFs" secondAttribute="trailing" constant="5" id="Uk1-0F-aCW"/>
+                    <constraint firstItem="0ju-Fb-pFs" firstAttribute="leading" secondItem="6Du-YZ-Pdj" secondAttribute="leading" constant="5" id="hCb-4C-lVZ"/>
+                    <constraint firstItem="Xa9-U3-BxR" firstAttribute="leading" secondItem="6Du-YZ-Pdj" secondAttribute="leading" id="uvG-ac-EQ1"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="153" height="133"/>
+            <connections>
+                <outlet property="highLightsImageRing" destination="0ju-Fb-pFs" id="TJr-in-Vao"/>
+                <outlet property="highlightsImage" destination="6yg-0D-x5d" id="Gdz-tb-s0k"/>
+                <outlet property="highlightsLbl" destination="Xa9-U3-BxR" id="zwq-Iq-u1f"/>
+            </connections>
+            <point key="canvasLocation" x="149.61832061068702" y="26.056338028169016"/>
+        </collectionViewCell>
+    </objects>
+</document>
